@@ -1,0 +1,56 @@
+{
+  "name": "usermst",
+  "base": "User",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "memberid": {
+      "type": "number"
+    },
+    "employeeid": {
+      "type": "number"
+    },
+    "email": {
+      "type": "string"
+    },
+    "password": {
+      "type": "string"
+    },
+    "userstatus": {
+      "type": "string"
+    },
+    "date": {
+      "type": "date"
+    },
+    "lastlogging": {
+      "type": "string"
+    },
+    "efffrom": {
+      "type": "date"
+    },
+    "expirydate": {
+      "type": "date"
+    },
+    "status": {
+      "type": "string"
+    },
+    "createdby": {
+      "type": "string"
+    },
+    "createddate": {
+      "type": "date"
+    },
+    "updatedby": {
+      "type": "string"
+    },
+    "updateddate": {
+      "type": "date"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

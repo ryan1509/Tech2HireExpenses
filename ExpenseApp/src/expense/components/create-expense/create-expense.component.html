@@ -1,0 +1,82 @@
+<h1>Spend in a Day</h1>
+<h2>Add a new Expense</h2>
+
+
+
+
+
+<!-- <div id="form-box"> -->
+<form [formGroup]="expenseForm">
+  <div class="row">
+
+    <div class="col-md-4">
+      <div class="form-control">
+       <label>Expense Year:</label> 
+        <select formControlName="expenseyear">
+          <option selected>--Select--</option>
+          <option [value]="year.id" *ngFor="let year of years">
+              {{year.lookupvalue}}
+            </option>
+        </select>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+        <div  class="form-control">
+          Expense Month:
+          <select  formControlName="expensemonth">
+            <option selected>--Select--</option>
+            <option [value]="month.id" *ngFor="let month of months">
+                {{month.lookupvalue}}
+              </option>
+          </select>
+        </div>
+    </div>
+
+    <div class="col-md-4">
+        <div class="form-control">
+          Expense Type : 
+          <select formControlName="expensetype">
+            <option selected>--Select--</option>
+            <option [value]="expenseType.id" *ngFor="let expenseType of expenseTypes">
+                {{expenseType.lookupvalue}}
+              </option>
+          </select>
+        </div>
+    </div>
+  </div>
+  <div class="row">
+      <div class="col-md-4">
+          <div  class="form-control">
+           <input placeholder="Expense name" formControlName="expensename" type="text">
+          </div>
+      </div>
+
+      <div class="col-md-4">
+          <div  class="form-control">
+              <input placeholder="Enter amount" formControlName="amount" type="text">
+          </div>
+      </div>
+      </div>
+ 
+  
+</form>
+<!-- </div> -->
+
+<button (click)="saveExpense()" class="center"> Submit expense</button>
+
+<table>
+  <tr>
+    <th>SNO</th>
+    <th>Category</th>
+    <th>Expense Name</th>
+    <th>Amount</th>
+  </tr>
+  <tr>
+    <td>
+
+    </td>
+    
+  </tr>
+
+</table>
